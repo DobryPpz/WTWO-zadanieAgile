@@ -10,6 +10,9 @@ class Firma extends Component {
         this.dochody = dochody;
         this.kontrahents = [];
     }
+    getNazwa(){
+        return this.nazwa;
+    }
     addKontrahent(kontrahent){
         this.kontrahents.push(kontrahent);
     }

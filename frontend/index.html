@@ -8,10 +8,61 @@
 </head>
 <body>
     <div id="holding">
-        holdingi
+        <div id="holdingAdding">
+            <input type="text" id="holdingnazwa">
+            <input type="button" value="Stwórz holding" id="holdingcreate">
+        </div>
+        Tutaj się wybiera holding
+        <select name="holdingi" id="holdingi">
+
+        </select>
+        <div id="firmaadding">
+            <div>
+                Nazwa firmy: 
+                <input type="text" id="firmanazwa">
+            </div>
+            <div>
+                Adres firmy: 
+                <input type="text" id="firmaadres">
+            </div>
+            <div>
+                NIP firmy: 
+                <input type="text" id="firmanip">
+            </div>
+            <div>
+                Przychody firmy z ostatnich 10 lat: 
+                <input type="text" id="firmaprzychody">
+            </div>
+            <div>
+                Dochody firmy z ostatnich 10 lat: 
+                <input type="text" id="firmadochody">
+            </div>
+            
+            <input type="button" value="Dodaj firmę" id="firmacreate">
+        </div>
+        <div id="bonifikataholding">
+            <div>Tutaj się liczy bonifikatę holdingu</div>
+            <input type="button" value="Policz bonifikatę" id="calculatebonifikataholding">
+        </div>
     </div>
+    <hr>
     <div id="firma">
-        firmy
+        <div id="bonifikatafirma">
+            <div>Tutaj się liczy bonifikatę firmy</div>
+            <select name="firmy" id="firmy">
+                
+            </select>
+            <input type="button" value="Policz bonifikatę" id="calculatebonifikatafirma">
+        </div>
+        <div id="serializer">
+            <div>Tutaj się serializuje firmę do pliku XML/JSON</div>
+            <input type="button" value="Serializuj do XML" id="serializexml">
+            <input type="button" value="Serializuj do JSON" id="serializejson">
+        </div>
+        <div id="messagearea">
+            <div>Tutaj przychodzą wiadomości od systemu, włącznie z plikami XML/JSON</div>
+            <textarea name="messageoutput" id="messageoutput" cols="50" rows="20"></textarea>
+        </div>
     </div>
 </body>
 </html>

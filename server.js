@@ -16,7 +16,7 @@ app.get("/",(req,res) => {
     res.sendFile("index.html")
 });
 
-app.get("/bonifikata",(req,res) => {
+app.post("/bonifikata",(req,res) => {
     return res.end(BonifikataController.getBonifikata(req,res).toString());
 });
 
@@ -32,15 +32,15 @@ app.get("/holdings",(req,res) => {
     return res.end(JSON.stringify(GetHoldingsController.getholdings(req,res)));
 });
 
-app.get("/json",(req,res) => {
+app.post("/json",(req,res) => {
     return res.end(SerializeJSONController.serializeJSON(req,res));
 });
 
-app.get("/xml",(req,res) => {
+app.post("/xml",(req,res) => {
     return res.end(SerializeXMLController.serializeXML(req,res));
 });
 
-app.get("/firmy",(req,res) => {
+app.post("/firmy",(req,res) => {
     return res.end(JSON.stringify(GetChildrenController.getChildren(req,res)));
 });
 

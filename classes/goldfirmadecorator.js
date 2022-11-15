@@ -6,7 +6,7 @@ class GoldFirmaDecorator extends Component {
         this.wrappee = firma
     }
     getNazwa(){
-        return this.wrappee.nazwa;
+        return this.wrappee.getNazwa();
     }
     addKontrahent(kontrahent){
         this.wrappee.addKontrahent(kontrahent);
